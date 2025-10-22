@@ -250,6 +250,5 @@ API ini telah di-deploy ke Vercel dan dapat diakses melalui URL berikut:
 
 **https://vercel.com/letsdothis-projects/responsi-modul-1-prak-ppb-qgp1**
 
-(Catatan: Link diambil dari file koleksi Postman yang disediakan).
 
 
