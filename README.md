@@ -1,9 +1,3 @@
-Tentu, saya bisa membuatkan file `README.md` untuk proyek Anda berdasarkan file-file yang telah disediakan.
-
-Berikut adalah isi file `README.md` yang mencakup semua poin yang Anda minta:
-
------
-
 # API Manajemen Obat (Responsi Modul 1)
 
 ## 1\. Deskripsi Umum Proyek
@@ -254,7 +248,8 @@ Mendapatkan detail obat, kategori, dan pemasoknya (join).
 
 API ini telah di-deploy ke Vercel dan dapat diakses melalui URL berikut:
 
-**[[https://create-api-medication-if5f.vercel.app](https://www.google.com/url?sa=E&source=gmail&q=https://create-api-medication-if5f.vercel.app)](https://vercel.com/letsdothis-projects/responsi-modul-1-prak-ppb-qgp1)**
+**https://vercel.com/letsdothis-projects/responsi-modul-1-prak-ppb-qgp1**
 
 (Catatan: Link diambil dari file koleksi Postman yang disediakan).
+
 
