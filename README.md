@@ -254,6 +254,7 @@ Mendapatkan detail obat, kategori, dan pemasoknya (join).
 
 API ini telah di-deploy ke Vercel dan dapat diakses melalui URL berikut:
 
-**[https://create-api-medication-if5f.vercel.app](https://www.google.com/url?sa=E&source=gmail&q=https://create-api-medication-if5f.vercel.app)**
+**[[https://create-api-medication-if5f.vercel.app](https://www.google.com/url?sa=E&source=gmail&q=https://create-api-medication-if5f.vercel.app)](https://vercel.com/letsdothis-projects/responsi-modul-1-prak-ppb-qgp1)**
 
 (Catatan: Link diambil dari file koleksi Postman yang disediakan).
+
