@@ -133,7 +133,7 @@ Membuat kategori baru.
 
     ```json
     {
-      "name": "Vitamin dan Suplemen"
+    "name": "Obat Tidur Sebelum Jam 00.00 "
     }
     ```
 
@@ -141,9 +141,8 @@ Membuat kategori baru.
 
     ```json
     {
-      "id": "a1b2c3d4-xxxx-xxxx-xxxx-fakerandomid",
-      "created_at": "2024-10-20T10:30:00.123456+00:00",
-      "name": "Vitamin dan Suplemen"
+    "id": "42d22b2c-6b93-4356-b364-0044aa5b5df1",
+    "name": "Obat Tidur Sebelum Jam 00.00 "
     }
     ```
 
@@ -159,9 +158,9 @@ Membuat pemasok baru.
 
     ```json
     {
-      "name": "PT. Kimia Farma",
-      "email": "kontak@kimiafarma.co.id",
-      "phone": "081234567890"
+    "name": "PT Kimia Jesse Pinkman",
+    "phone": "08123456789123",
+    "email": "info@kimiafarma.com"
     }
     ```
 
@@ -169,11 +168,10 @@ Membuat pemasok baru.
 
     ```json
     {
-      "id": "b2c3d4e5-xxxx-xxxx-xxxx-fakerandomid",
-      "created_at": "2024-10-20T10:35:00.123456+00:00",
-      "name": "PT. Kimia Farma",
-      "email": "kontak@kimiafarma.co.id",
-      "phone": "081234567890"
+    "id": "ad848227-6d1d-4c83-adf1-26fa8c97091b",
+    "name": "PT Kimia Jesse Pinkman",
+    "phone": "08123456789123",
+    "email": "info@kimiafarma.com"
     }
     ```
 
@@ -189,13 +187,13 @@ Membuat data obat baru.
 
     ```json
     {
-      "sku": "MED-001",
-      "name": "Paracetamol 500mg",
-      "description": "Obat penurun panas dan pereda nyeri",
-      "price": 15000,
-      "quantity": 100,
-      "category_id": "a1b2c3d4-xxxx-xxxx-xxxx-fakerandomid",
-      "supplier_id": "b2c3d4e5-xxxx-xxxx-xxxx-fakerandomid"
+    "sku": "MED-002",
+    "name": "Obat Tidur Sebelum Jam 00.00",
+    "description": "Untuk orang kepengen tidur sebelum jam 00.00",
+    "category_id": "42d22b2c-6b93-4356-b364-0044aa5b5df1",
+    "supplier_id": "ad848227-6d1d-4c83-adf1-26fa8c97091b",
+    "price": 5000,
+    "quantity": 20
     }
     ```
 
@@ -203,15 +201,14 @@ Membuat data obat baru.
 
     ```json
     {
-      "id": "c3d4e5f6-xxxx-xxxx-xxxx-fakerandomid",
-      "created_at": "2024-10-20T10:40:00.123456+00:00",
-      "sku": "MED-001",
-      "name": "Paracetamol 500mg",
-      "description": "Obat penurun panas dan pereda nyeri",
-      "price": 15000,
-      "quantity": 100,
-      "category_id": "a1b2c3d4-xxxx-xxxx-xxxx-fakerandomid",
-      "supplier_id": "b2c3d4e5-xxxx-xxxx-xxxx-fakerandomid"
+    "id": "ef37a22e-a170-4b2e-99ef-f9d762ffe8c1",
+    "sku": "MED-002",
+    "name": "Obat Tidur Sebelum Jam 00.00",
+    "description": "Untuk orang kepengen tidur sebelum jam 00.00",
+    "category_id": "42d22b2c-6b93-4356-b364-0044aa5b5df1",
+    "supplier_id": "ad848227-6d1d-4c83-adf1-26fa8c97091b",
+    "price": 5000,
+    "quantity": 20
     }
     ```
 
@@ -219,28 +216,28 @@ Membuat data obat baru.
 
 Mendapatkan detail obat, kategori, dan pemasoknya (join).
 
-  * **Request URL:** `GET /api/medications/c3d4e5f6-xxxx-xxxx-xxxx-fakerandomid`
+  * **Request URL:** `http://localhost:3000/api/medications/3d04fca1-f177-4fa5-b77b-606f52551c45`
 
   * **Response (200 OK):**
 
     ```json
     {
-      "id": "c3d4e5f6-xxxx-xxxx-xxxx-fakerandomid",
-      "sku": "MED-001",
-      "name": "Paracetamol 500mg",
-      "description": "Obat penurun panas dan pereda nyeri",
-      "price": 15000,
-      "quantity": 100,
-      "categories": {
-        "id": "a1b2c3d4-xxxx-xxxx-xxxx-fakerandomid",
-        "name": "Obat Keras"
-      },
-      "suppliers": {
-        "id": "b2c3d4e5-xxxx-xxxx-xxxx-fakerandomid",
-        "name": "PT. Kimia Farma",
-        "email": "kontak@kimiafarma.co.id",
-        "phone": "081234567890"
-      }
+    "id": "3d04fca1-f177-4fa5-b77b-606f52551c45",
+    "sku": "MED-002",
+    "name": "Obat Tidur Sebelum Jam 00.00",
+    "description": "Untuk orang kepengen tidur sebelum jam 00.00",
+    "price": 5000,
+    "quantity": 20,
+    "categories": {
+        "id": "42d22b2c-6b93-4356-b364-0044aa5b5df1",
+        "name": "Obat Tidur Sebelum Jam 00.00 "
+    },
+    "suppliers": {
+        "id": "ad848227-6d1d-4c83-adf1-26fa8c97091b",
+        "name": "PT Kimia Jesse Pinkman",
+        "email": "info@kimiafarma.com",
+        "phone": "08123456789123"
+    }
     }
     ```
 
@@ -249,6 +246,7 @@ Mendapatkan detail obat, kategori, dan pemasoknya (join).
 API ini telah di-deploy ke Vercel dan dapat diakses melalui URL berikut:
 
 **https://vercel.com/letsdothis-projects/responsi-modul-1-prak-ppb-qgp1**
+
 
 
 
